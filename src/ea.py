@@ -1,7 +1,7 @@
 import random
-from representation import random_tour, tour_length
-from operators import crossover, mutate
-from selection import selection
+from src.representation import random_tour, tour_length
+from src.operators import crossover, mutate
+from src.selection import selection
 
 
 def ea(cities, mu,lam, mutation_prob, generations):

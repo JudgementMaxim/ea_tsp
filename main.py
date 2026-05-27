@@ -1,6 +1,10 @@
-from tsp_loader import load_tsp
-from representation import tour_length
-from ea import ea
+import random
+
+from src.ea import ea
+from src.representation import random_tour, tour_length
+from src.operators import crossover, mutate
+from src.selection import selection
+from src.tsp_loader import load_tsp
 
 berlin = load_tsp('data/berlin52.tsp.gz')
 
